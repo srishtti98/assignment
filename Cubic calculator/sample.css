@@ -1,0 +1,35 @@
+
+
+body{
+    margin: 0;
+    background-image: url(https://images.pexels.com/photos/6927347/pexels-photo-6927347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+
+.container {
+    width: 45%;
+    margin: 100px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;  
+    background-color: rgb(137, 130, 130 , 0.02);
+}
+
+.h1{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 10px;
+}
+
+button{
+    background-color :darkslategray;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,55 @@
+
+
+body {
+    margin: 0;
+    font-family :'Times New Roman', Times, serif ;
+    background-color :black;
+    background-image: url(./pexels-nataliya-vaitkevich-6863187.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+
+
+.container {
+        width: 45%;
+        margin: 100px auto;
+        border: 2px solid rgb(185, 8, 8);
+        border-radius: 10px;
+        padding: 20px;
+        background-color :rgb(209, 204, 204 , 0.04) ;
+        box-shadow: bisque;
+}
+
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 10px;
+}
+
+input:focus {
+  outline-color: blue;
+}
+
+
+button{
+    background-color: #a04589;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #4562a0;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }

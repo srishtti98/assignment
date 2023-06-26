@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <input type="text" id="name" placeholder="Please enter your name"> 
+
+        <br><br><br>
+
+        <input type="text" id="salary" placeholder="Please enter your salary">
+        <br><br>
+        <button onclick="taxCalculate('srishtti' , 500000)">Tax calculate</button>
+        <br><br>    
+
+        <label for="Deduction"><b>Deduction of 10% :</b></label>
+        <input type="text" id="tenPercent" >
+
+        <br><br><br>
+        
+        <label for="Deduction"><b>Deduction of 20% :</b></label>
+        <input type="text" id="twentyPercent">
+
+        <br><br><br>
+
+        <label for="Total"><b>Total Deduction: </b></label>
+        <input type="text" id="total">
+
+        <p id="noTax"></p>
+
+
+    </div>
+  
+    <script src="./app.js"></script>
+    
+</body>
+</html>
