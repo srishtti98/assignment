@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form validation</title>
+  
+  <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+
+  <div class = container>
+  <form id="myForm">
+
+    <h1>Sign Up form</h1>
+
+    <input type="text" id="userName" onblur="validateNameInput()"  placeholder="userName">
+    <span id ="userNameError" class="error"></span>
+
+    <br><br><br>
+    
+    <input type="text" id="email" onblur="validateEmailInput()" placeholder="email">
+    <span id="emailError" class="error"></span>
+
+    <br><br><br>
+
+   
+    <input type="password" id="password" onblur="validatePasswordInput()" placeholder="password">
+    <span id="passwordError" class="error"></span>
+
+    <br><br><br>
+
+    <input type="text" id="mobileNo" onblur="validatePhnoInput()" placeholder="MobileNo">
+    <span id="mobileNoError" class="error"></span>
+
+    <br><br><br>
+
+
+
+    <button type="submit" id="btn">Submit</button>
+  </form>
+
+
+
+  <script src="./app.js"></script>
+
+</div>
+
+</body>
+</html>

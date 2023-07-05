@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling <Input></Input></title>
+</head>
+<body>
+
+    <h1>kpopAudition</h1>
+    <form action="">
+
+        <label for="firstName"> firstName: </label>
+        <input type="text" id="firstName" placeholder="Enter the firstName">
+
+        <br><br>
+
+        <label for="lastName"> lastName: </label>
+        <input type="text" id="lastName" placeholder="Enter the lastName">
+
+        <br><br>
+
+        <label for="address"> address : </label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" id="Gender" value="Male">Male
+        <input type="radio" id="Gender" value="Female">Female
+        <input type="radio" id="Gender" value="Trans">Trans
+
+        <br> <br>
+
+        <label for="Skills"> skills : </label>
+        <input type="checkbox" id="singing" value="singing" >Singing
+        <input type="checkbox" id="dancing" value="Dancing" >Dancing
+        <input type="checkbox" id="dancing" value="Rapping" >Rapping
+
+        <br><br>
+
+        <label for="country"> select the country : </label>
+        <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="China">China</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <br> <br>
+
+       
+        <input type="submit" id="submmit" name="Submit">
+
+
+    </form>
+
+    <script>
+        document.getElementById("submmit").addEventListener("click", function(){
+            alert("Thank you for your submission");
+            });
+            
+    </script>
+    
+    
+</body>
+</html>

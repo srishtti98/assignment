@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <div class="container">
+    <form onsubmit="validateForm(event)" action="http://www.achieversit.com/">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="username"  oninput="validateUsername()">
+
+        <span id="usernameError"></span>
+        
+        <label for="password"><P></P>Password</label>
+        <input type="password" id="password" placeholder="password" oninput="validatePassword()">
+
+        <span id="passwordError"></span>
+
+        <br> <br>
+        <button id="submit">Log in</button>
+    </form>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
