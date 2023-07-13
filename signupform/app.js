@@ -62,7 +62,7 @@ function validateNameInput(){debugger;
         }
         
         function validatePasswordInput(){
-            let password = document.getElementById("password");
+            let password = document.getElementById("password").value.trim();
 
            if(password == ""){
              let invalidpassword= document.querySelector("#passwordErrorr");
@@ -74,7 +74,7 @@ function validateNameInput(){debugger;
          
             document.getElementById("password").classList.add("valid")
             document.getElementById('passwordError').innerText = `Valid Password`;
-        inputStatus = true;
+            inputStatus = true;
             }else{
             document.getElementById("password").classList.add("invalid")
              document.getElementById('passwordError').innerText = 'Password must be alphanumeric (@,_ and - are also allowed)& must be 8-20 characters';

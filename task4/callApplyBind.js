@@ -28,23 +28,37 @@ const laptop = {
 
 function toggleLid(lidstatus){
     this.bagOpenClose = lidstatus;
+    if(lidstatus){
+        console.log("Bag is open");
+    }else {
+        console.log("Bag is closed");
+    }
 
 }
 
 function newStrapLength(lengthLeft , lengthRight){
     this.starpLength.left = lengthLeft;
     this.starpLength.right = lengthRight;
+
+    if(lengthLeft === lengthRight){
+        console.log("The bag is in normal condition");
+    }else if (lengthRight >lengthLeft){
+        console.log("The bag length is under abnormal condition. The right strap length is increased, please adjust it. ")
+    } else {
+        console.log("The bag length is under abnormal condition. The left strap length is increased, please adjust it. ")
+    }
 }
 
 toggleLid.call(backpack, true);
 toggleLid.call(laptop , false);
 
-newStrapLength.apply(backpack , [ 23 , 23]);
+newStrapLength.apply(backpack , [ 23 , 24]); 
 
 var newLength = newStrapLength.bind(backpack);
 var bagOpCL = toggleLid.bind(laptop);
 
-newLength(25, 25);
+newLength(25, 25); 
 
 console.log(laptop)
+
 
